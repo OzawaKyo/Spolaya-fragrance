@@ -1,0 +1,79 @@
+body {
+    font-family: 'Tajawal';
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #909090;
+    text-align: left;
+    background-color: #212121;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 5em;
+    padding-top:0.5em;
+    padding-bottom: 2em;
+}
+.left-nav{
+    display: flex;
+    gap: 70px;
+    align-self: center;
+}
+.right-nav{
+    display: flex;
+    gap: 20px;
+    align-self: center;
+}
+.logo-nav{
+        max-width:350px;
+        padding-top: 1.7em;
+}
+.nav-item :hover{
+    cursor: pointer;
+    color: white;
+    transition: color 0.2s ease-in-out;
+    fill: white;
+    text-decoration: line-through;
+}
+.nav-icons{
+    padding: 1em;
+}
+.lineTr{
+    text-decoration: line-through;
+}
+hr{
+    border-color: #616060;
+    margin-left:3em;
+    margin-right:3em;
+
+}
+.black{
+    max-width: 600px;
+    max-height: 637px;
+}
+.Home{
+    display: flex;
+    margin: 5em;
+    margin-left:6em;
+    gap: 6em;
+}
+.smell{
+    font-family: 'Libre Caslon Text', serif;
+    color: #ada494;
+    font-size: 90px;
+    margin: 0;
+}
+.home-text{
+    margin-left: 5em;
+    display: flex;
+    flex-direction: column;
+}
+.desc{
+    padding: 1em;
+}
+.shop-now{
+    align-self: flex-start !important;
+    width: 242px !important;
+    margin-top: 1em !important;
+}
