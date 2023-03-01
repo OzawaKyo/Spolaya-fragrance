@@ -13,7 +13,7 @@ body {
     justify-content: space-between;
     padding: 5em;
     padding-top:0.5em;
-    padding-bottom: 2em;
+    padding-bottom: 0.2em;
 }
 .left-nav{
     display: flex;
@@ -73,7 +73,134 @@ hr{
     padding: 1em;
 }
 .shop-now{
-    align-self: flex-start !important;
+    /* align-self: flex-start !important; */
     width: 242px !important;
     margin-top: 1em !important;
+}
+@media screen and (max-width: 1450px) {
+    .smell{
+        font-size: 75px;
+    }
+    .desc{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 1350px) {
+    .smell{
+        font-size: 65px;
+    }
+    .desc{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .home-text{
+        margin-left: 0;
+    }
+    .smell{
+        font-size: 60px;
+    }
+    .desc{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .Home{
+        flex-direction: column;
+    }
+    .black{
+        align-self: center;
+    }
+    .home-text{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 2em;
+        margin-left: 7em;
+        margin-right:7em ;
+
+    }
+    .part1{
+        padding-right: 8em;
+        width: 800px;
+    }
+    .part2{
+        display: flex;
+        flex-direction: column;
+    }
+    .smell{
+        font-size: 45px;
+    }
+    .left-nav{
+        display: none;
+    }
+    .navbar{
+        padding: 0;
+        padding-bottom: 1em;
+    }
+    .logo-nav{
+        max-width:200px ;
+    }
+    .nav-icons{
+        width: 26px;
+        padding: 1em;
+    }
+    .shop-now{
+        align-self: center !important;
+    }
+    .desc{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .black{
+        max-width: 400px;
+    }
+}   
+@media screen and (max-width: 550px) {
+    .logo-nav{
+        max-width:180px ;
+    }
+    .right-nav{
+        margin-right: 1em;
+    }
+    .nav-icons{
+        width: 20px;
+        padding: 0.2em;
+        align-self: center;
+    }
+    .black{
+        max-width: 250px;
+    }
+    .smell{
+        font-size: 36px;
+        padding: 0 !important;
+        justify-content: unset;
+    }
+    .home-text{
+        flex-direction: column;
+        align-items: self-start;
+        margin: 0;
+    }
+    .part1{
+        width: max-content;
+        padding: 0em ;
+        margin: 0em !important;
+        align-self: center;
+        padding-bottom: 2em !important;
+    }
+    .desc{
+        /* padding: 0em !important;
+        margin: 0em !important;
+        padding-bottom: 2em !important; */
+        display: none;
+    }
+    .part2{
+        justify-content: center !important;
+        align-self: center  ;
+    }
+    .shop-now{
+        align-self: center !important;
+
+    }
 }
