@@ -5,6 +5,7 @@ export default function ShopPage(){
     return(
         <div>
             <Navbar />
+            {/* <hr /> */}
             <Shop />
         </div>
     )

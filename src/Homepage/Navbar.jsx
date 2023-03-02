@@ -8,8 +8,8 @@ export default function Navbar(){
     return(
         <nav className="navbar">
             <div className="left-nav nav-item">
-                <h2 onClick={()=>{navigate('/')}}>HOME</h2>
-                <h2 onClick={()=>{navigate('/Shop')}}>SHOP</h2>
+                <h2 className="h22" onClick={()=>{navigate('/')}}>HOME</h2>
+                <h2 className="h22" onClick={()=>{navigate('/Shop')}}>SHOP</h2>
             </div>
             
             <img onClick={()=>{navigate('/')}} className="logo-nav nav-item" src={logo} />

@@ -1,4 +1,4 @@
-import black from "../assets/black2.jpg"
+import black from "../assets/vibe.jpg"
 import './button.css'
 import {useNavigate} from 'react-router-dom'
 
