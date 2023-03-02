@@ -8,20 +8,67 @@ body {
     text-align: left;
     background-color: white;
 }
+.shop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em ;
+}
 .products{
     display: flex;
-    background-color: blue;
-    justify-content: space-evenly;
+    /* background-color: blue; */
+    /* justify-content: space-evenly; */
+    gap: 5em;
     margin: 5em;
+    margin-top: 3em;
     margin-left:18em ;
     margin-right:18em ;
+    margin-bottom: 8em;
 
 }
-.productPage{
-    background-color: red;
+.product{
+    /* background-color: red; */
     display: flex;
     flex-direction: column;
 }
+.product :hover{
+    width: 160px;
+    cursor: pointer;
+    overflow: hidden;
+}
 .product-image{
-    width: 180px;
+    width: 150px;
+}
+.product-name{
+    margin: 0;
+    color: #504d4c;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.3125;
+    text-transform: none;
+    text-align:center;
+}
+.Title{
+    margin: 0;
+    color: #504d4c;
+    text-transform: uppercase;
+    letter-spacing: .045em;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.8rem;
+    line-height: 1.272727273;
+}
+.view{
+    display: flex;
+    align-items: center;
+}
+.view-all{
+    margin: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: .083333333em;
+    font-weight: 700;
+    font-style: normal;
+    font-size: .75rem;
+    line-height: 1.75;
 }

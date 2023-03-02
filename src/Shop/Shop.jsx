@@ -24,15 +24,33 @@ export default function Shop(){
     
 
     return(
-        <div className='products'>
-            {productList.slice(0, 4).map((product) =>(
-                <div className='productPage'>
-                    <img className='product-image' src={product.Image} alt="" />
-                    <h1 className='product-name'>{product.Name}</h1>
-                    <h1>{product.Brand}</h1>
-                    <h1>{product.Price}</h1>
-                </div>
-            ))}
+        <div className='shop'>
+            <h1 className='Title' >Men Favourites </h1>
+            <div className='view'>
+                <h2 className='view-all' >View all </h2>
+                <svg className='arrow' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M14.59 16.004L5.982 7.397l1.414-1.414 8.607 8.606V7.004h2v11h-11v-2z"/></svg>
+            </div>
+            <div className='products'>
+                {productList.slice(0, 4).map((product) =>(
+                    <div className='product'>
+                        <img className='product-image' src={product.Image} alt="" />
+                        <h1 className='product-name'>{product.Name} by {product.Brand}</h1>
+                    </div>
+                ))}
+            </div>
+            <h1 className='Title' >Women Favourites </h1>
+            <div className='view'>
+                <h2 className='view-all' >View all </h2>
+                <svg className='arrow' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M14.59 16.004L5.982 7.397l1.414-1.414 8.607 8.606V7.004h2v11h-11v-2z"/></svg>
+            </div>
+            <div className='products'>
+                {productList.slice(4, 8).map((product) =>(
+                    <div className='product'>
+                        <img className='product-image' src={product.Image} alt="" />
+                        <h1 className='product-name'>{product.Name} by {product.Brand}</h1>
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }
