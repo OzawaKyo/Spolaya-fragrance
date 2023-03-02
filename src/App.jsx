@@ -1,18 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
-import Navbar from './Navbar'
-import Home  from './Home'
+import Homepage from './Homepage';
+import {BrowserRouter as Router , Routes,Route} from 'react-router-dom'
+import AuthPage from './User/AuthPage';
 
 function App() {
 
   return (
-    <div className="App">
-      <Navbar />
-      <hr />
-      <Home />
-    </div>
-  )
+    <Router >
+        <Routes>
+          <Route path='/' element={<Homepage />} />
+          <Route path='/Log' element={<AuthPage />} />
+        </Routes>
+    </Router>
+  );
 }
 
 export default App

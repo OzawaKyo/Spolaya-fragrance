@@ -1,6 +1,10 @@
-import black from "./assets/black2.jpg"
+import black from "../assets/black2.jpg"
 import './button.css'
+import {useNavigate} from 'react-router-dom'
+
 export default function Home(){
+
+    const navigate = useNavigate();
     return(
         <div className="Home">
             <img className="black" src={black} alt="" />
@@ -12,7 +16,7 @@ export default function Home(){
                 </div>
                 <div className="part2">
                     <p className="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, enim aspernatur. Corporis praesentium tenetur atque aliquid eius dolore similique cumque corrupti autem, facilis non aspernatur consectetur tempora quidem dignissimos hic.</p>
-                    <button className="button-27 shop-now">SHOP NOW</button>
+                    <button onClick={()=>{navigate('/Shop')}} className="button-27 shop-now">SHOP NOW</button>
                 </div>
             </div>
         </div>

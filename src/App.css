@@ -19,6 +19,7 @@ body {
     display: flex;
     gap: 70px;
     align-self: center;
+    color: #909090 !important;
 }
 .right-nav{
     display: flex;
@@ -28,6 +29,7 @@ body {
 .logo-nav{
         max-width:350px;
         padding-top: 1.7em;
+        cursor: pointer;
 }
 .nav-item :hover{
     cursor: pointer;
@@ -43,7 +45,7 @@ body {
     text-decoration: line-through;
 }
 hr{
-    border-color: #616060;
+    border-color: #ada494;
     margin-left:3em;
     margin-right:3em;
 
@@ -155,7 +157,9 @@ hr{
 @media screen and (max-width: 800px) {
     .black{
         max-width: 400px;
+        /* order: 2; */
     }
+    
 }   
 @media screen and (max-width: 550px) {
     .logo-nav{
