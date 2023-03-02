@@ -72,3 +72,30 @@ body {
     font-size: .75rem;
     line-height: 1.75;
 }
+@media screen and (max-width: 1000px) {
+    .product :hover{
+        width: 120px;
+    }
+    .product-image{
+        width: 100px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .product :hover{
+        width: 100px;
+    }
+    .product-image{
+        width: 80px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .products{
+        flex-direction: column;
+    }
+    .product :hover{
+        width: 100px;
+    }
+    .product-image{
+        width: 160px;
+    }
+}
