@@ -1,0 +1,27 @@
+body {
+    font-family: 'Tajawal';
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #443d3d;
+    text-align: left;
+    background-color: white;
+}
+.products{
+    display: flex;
+    background-color: blue;
+    justify-content: space-evenly;
+    margin: 5em;
+    margin-left:18em ;
+    margin-right:18em ;
+
+}
+.productPage{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+.product-image{
+    width: 180px;
+}

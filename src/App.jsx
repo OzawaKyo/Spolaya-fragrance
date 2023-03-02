@@ -1,7 +1,7 @@
 import './App.css'
 import Homepage from './Homepage';
 import {BrowserRouter as Router , Routes,Route} from 'react-router-dom'
-import AuthPage from './User/AuthPage';
+import ShopPage from './Shop/ShopPage';
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
     <Router >
         <Routes>
           <Route path='/' element={<Homepage />} />
-          <Route path='/Log' element={<AuthPage />} />
+          <Route path='/Shop' element={<ShopPage />} />
         </Routes>
     </Router>
   );
