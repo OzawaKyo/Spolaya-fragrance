@@ -33,11 +33,13 @@ body {
 }
 .product :hover{
     width: 160px;
+    height: 160px;
     cursor: pointer;
     overflow: hidden;
 }
 .product-image{
     width: 150px;
+    min-height: 150px;
 }
 .product-name{
     margin: 0;
@@ -62,6 +64,8 @@ body {
 .view{
     display: flex;
     align-items: center;
+    cursor: pointer;
+
 }
 .view-all{
     margin: 0.5em;
@@ -71,7 +75,11 @@ body {
     font-style: normal;
     font-size: .75rem;
     line-height: 1.75;
+    cursor: pointer;
+    text-decoration: underline !important;
 }
+
+
 @media screen and (max-width: 1000px) {
     .product :hover{
         width: 120px;
