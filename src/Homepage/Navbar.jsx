@@ -1,15 +1,35 @@
 import logo from "../assets/spolaya fragrance 3.png"
 import {useNavigate} from 'react-router-dom'
+import { useState } from "react";
+
 
 export default function Navbar(){
+
+    const [isFirstDashed, setIsFirstDashed] = useState(false);
+  const [isSecondDashed, setIsSecondDashed] = useState(false);
+
+  const handleFirstClick = () => {
+    setIsFirstDashed(true);
+    setIsSecondDashed(false);
+  };
+
+  const handleSecondClick = () => {
+    setIsSecondDashed(true);
+    setIsFirstDashed(false);
+  };
+
+  const firstStyle = isFirstDashed ? { textDecoration: 'lineThrough' } : {};
+  const secondStyle = isSecondDashed ? { textDecoration: 'lineThrough' } : {};
 
     const navigate = useNavigate();
 
     return(
         <nav className="navbar">
             <div className="left-nav nav-item">
-                <h2 className="h22" onClick={()=>{navigate('/')}}>HOME</h2>
-                <h2 className="h22" onClick={()=>{navigate('/Shop')}}>SHOP</h2>
+                <h2 className="h22" style={{firstStyle}} onClickCapture={()=>{navigate('/');
+                                                  handleFirstClick()              }}>HOME</h2>
+                <h2 className="h22" style={{secondStyle}} onClickCapture={()=>{navigate('/Shop');
+                                                  handleSecondClick()              }}>SHOP</h2>
             </div>
             
             <img onClick={()=>{navigate('/')}} className="logo-nav nav-item" src={logo} />

@@ -1,9 +1,9 @@
 import black from "../assets/vibe.jpg"
 import './button.css'
 import {useNavigate} from 'react-router-dom'
+import { useState } from "react";
 
 export default function Home(){
-
     const navigate = useNavigate();
     return(
         <div className="Home">
