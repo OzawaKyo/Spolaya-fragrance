@@ -32,8 +32,7 @@ body {
     flex-direction: column;
 }
 .product :hover{
-    /* width: 155px; */
-    /* height: 155px; */
+
     cursor: pointer;
     overflow: hidden;
 }
@@ -81,17 +80,13 @@ body {
 
 
 @media screen and (max-width: 1000px) {
-    .product :hover{
-        width: 130px;
-    }
+
     .product-image{
         width: 130px;
     }
 }
 @media screen and (max-width: 800px) {
-    .product :hover{
-        width: 150px;
-    }
+
     .product-image{
         width: 150px;
         height: 120px;
@@ -105,9 +100,7 @@ body {
     .products{
         flex-direction: column;
     }
-    .product :hover{
-        width: 160px;
-    }
+
     .product-image{
         width: 160px;
     }

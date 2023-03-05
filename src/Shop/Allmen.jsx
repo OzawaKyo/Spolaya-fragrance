@@ -29,7 +29,7 @@ export default function Allmen(){
             <Navbar />
             <hr />
         <div className='allmen'>
-            <h1 className='aTitle' >Men Cologne : </h1>
+            <h3 className='aTitle' >Men Cologne : </h3>
             <div className="products">
                 {menProductList.map((product, index) => (
                     

@@ -23,10 +23,10 @@
     width: 150px;
 
 }
-.a-product-image:hover{
+/* .a-product-image:hover{
     width: 160px;
 
-}
+} */
 .a-product-name{
     margin: 0;
     color: #504d4c;
@@ -48,6 +48,7 @@
     font-style: normal;
     font-size: 1.8rem;
     line-height: 1.272727273;
+
 }
 .product-price{
     margin: 0;
@@ -72,6 +73,10 @@
         margin: 0 !important;
         margin-right: 0em;
     }
+    .aTitle{
+        margin-bottom: 2em;
+    }
+    
 }
 .products{
     flex-wrap: wrap;
