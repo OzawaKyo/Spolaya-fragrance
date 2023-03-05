@@ -30,12 +30,12 @@ export default function Allmen(){
             <hr />
         <div className='allmen'>
             <h1 className='aTitle' >Men Cologne : </h1>
-            <div className="a-product-list">
+            <div className="products">
                 {menProductList.map((product, index) => (
                     
-                    <div className="a-product" key={index}>
-                        <img className='a-product-image' src={product.Image} alt="" />
-                        <h1 className='a-product-name'>{product.Name} by {product.Brand}</h1>
+                    <div className="product" key={index}>
+                        <img className='product-image' src={product.Image} alt="" />
+                        <h1 className='product-name'>{product.Name} by {product.Brand}</h1>
                         <h2 className='product-price'>{product.Price} dh</h2>
                     </div>
                 ))}
