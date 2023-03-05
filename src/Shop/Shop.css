@@ -94,6 +94,9 @@ body {
     .products{
         flex-wrap: wrap;
     }
+    .view{
+        margin-bottom: 4em;
+    }
 }
 
 @media screen and (max-width: 600px) {
