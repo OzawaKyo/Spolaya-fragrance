@@ -32,8 +32,8 @@ body {
     flex-direction: column;
 }
 .product :hover{
-    width: 160px;
-    height: 160px;
+    /* width: 155px; */
+    /* height: 155px; */
     cursor: pointer;
     overflow: hidden;
 }
@@ -82,26 +82,31 @@ body {
 
 @media screen and (max-width: 1000px) {
     .product :hover{
-        width: 120px;
+        width: 130px;
     }
     .product-image{
-        width: 100px;
+        width: 130px;
     }
 }
 @media screen and (max-width: 800px) {
     .product :hover{
-        width: 100px;
+        width: 150px;
     }
     .product-image{
-        width: 80px;
+        width: 150px;
+        height: 120px;
+    }
+    .products{
+        flex-wrap: wrap;
     }
 }
+
 @media screen and (max-width: 600px) {
     .products{
         flex-direction: column;
     }
     .product :hover{
-        width: 100px;
+        width: 160px;
     }
     .product-image{
         width: 160px;
