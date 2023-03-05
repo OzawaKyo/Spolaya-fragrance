@@ -1,35 +1,30 @@
 import logo from "../assets/spolaya fragrance 3.png"
 import {useNavigate} from 'react-router-dom'
 import { useState } from "react";
+import {useLocation } from 'react-router-dom';
 
 
 export default function Navbar(){
 
-    const [isFirstDashed, setIsFirstDashed] = useState(false);
-  const [isSecondDashed, setIsSecondDashed] = useState(false);
-
-  const handleFirstClick = () => {
-    setIsFirstDashed(true);
-    setIsSecondDashed(false);
-  };
-
-  const handleSecondClick = () => {
-    setIsSecondDashed(true);
-    setIsFirstDashed(false);
-  };
-
-  const firstStyle = isFirstDashed ? { textDecoration: 'lineThrough' } : {};
-  const secondStyle = isSecondDashed ? { textDecoration: 'lineThrough' } : {};
+    const [isClicked, setIsClicked] = useState(false);
+    const location = useLocation();
+  
+    const handleOnClick = () => {
+      setIsClicked(true);
+    };
+  
+    const textDecoration = (location.pathname === '/Shop' || location.pathname === '/Shop/Men' || location.pathname === '/Shop/Women' ) && (isClicked ? 'line-through' : 'line-through');
+  
 
     const navigate = useNavigate();
 
     return(
         <nav className="navbar">
             <div className="left-nav nav-item">
-                <h2 className="h22" style={{firstStyle}} onClickCapture={()=>{navigate('/');
-                                                  handleFirstClick()              }}>HOME</h2>
-                <h2 className="h22" style={{secondStyle}} onClickCapture={()=>{navigate('/Shop');
-                                                  handleSecondClick()              }}>SHOP</h2>
+                <h2 className="h22" onClick={()=>{navigate('/');
+                                                  handleOnClick;}}>HOME</h2>
+                <h2 className="h22" style={{textDecoration}} onClick={()=>{navigate('/Shop');
+                                                  handleOnClick;}}>SHOP</h2>
             </div>
             
             <img onClick={()=>{navigate('/')}} className="logo-nav nav-item" src={logo} />
