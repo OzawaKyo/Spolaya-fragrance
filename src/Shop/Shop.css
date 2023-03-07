@@ -95,6 +95,8 @@ body {
     }
     .products{
         flex-wrap: wrap;
+        margin-bottom: 5em !important;
+
     }
     .view{
         margin-bottom: 4em;
@@ -104,9 +106,14 @@ body {
 @media screen and (max-width: 600px) {
     .products{
         flex-direction: column;
+        margin-bottom: 5em !important;
+
     }
 
     .product-image{
         width: 160px;
     }
+}
+.t2{
+    margin-top: 2em;
 }

@@ -4,6 +4,8 @@ import {BrowserRouter as Router , Routes,Route} from 'react-router-dom'
 import ShopPage from './Shop/ShopPage';
 import Allmen from './Shop/Allmen';
 import Allwomen from './Shop/Allwomen';
+import { useParams } from 'react-router-dom';
+import Item from './Item/Item';
 
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
           <Route path='/Shop' element={<ShopPage />} />
           <Route path='/Shop/Men' element={<Allmen />} />
           <Route path='/Shop/Women' element={<Allwomen />} />
+          <Route path='/Shop/:id' element={<Item/>} />
         </Routes>
     </Router>
   );
