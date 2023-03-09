@@ -5,9 +5,10 @@ flex-direction: column;
 
 .item{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     /* background-color: red; */
     margin-top: 3em;
+    flex-direction: column;
 }
 .item2{
     /* background-color: blue; */
@@ -20,7 +21,10 @@ flex-direction: column;
     flex-direction: column;
     align-items: center;
     /* background-color: silver; */
-    width: 300px;
+    width: 40em;
+    align-self: center;
+    /* justify-self: center; */
+    justify-content: space-evenly;
 }
 .t-span{
     text-transform: lowercase;
@@ -37,30 +41,91 @@ flex-direction: column;
     line-height: 1.272727273;
     margin: 0;
     margin-bottom: 0.2em;
+    justify-self: self-start;
 }
 .item-brand{
     color: #504d4c;
     margin: 0;
-    margin-bottom: 1.5em;
+    margin-left: 7em;
+    /* margin-bottom: 1.5em; */
     text-transform: uppercase;
     letter-spacing: .045em;
     font-weight: 700;
     font-style: normal;
     font-size: 1.3rem;
     line-height: 1.272727273;
-    align-self: self-end;
+    /* align-self: self-end; */
 }
 .hrhr{
-    width: 20em;
+    width: 40em;
+    align-self: center;
+    justify-self: center;
+    margin-top: 2em;
+
 }
-.item-img{
+.ll{
+    display: flex;
+    padding-top: 2em;
+    align-self: center;
+    justify-self: center;
     margin-top: 2.5em;
     margin-bottom: 2.5em;
-    width: 300px;    
+    gap: 3em;
+}
+.item-img{
+
+    width: 300px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+}
+.box{
+    color: white;
+    width: 250px;
+    height: 50px;
 }
 .item-price{
-    color: rgb(182, 79, 79);
+    color: black;
     width: 300px;
-    /* background-color: aliceblue; */
-    text-align: end;
+    text-align: start;
+}
+.quantity{
+    width: 50px;
+    height: 25px;
+    align-self : start;
+    text-align: center;
+}
+.loading{
+    align-self: center;
+}
+@media screen and (max-width : 700px){
+    .ll{
+        flex-direction: column;
+        margin: 0;
+    }
+    .hrhr{
+        width: 20em;
+    }
+    .right{
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .item-name{
+        width: 400px;
+    }
+    .item{
+        width: 400px;
+        align-self: center;
+    }
+    .item-price{
+        text-align: center;
+    
+    }
+    .quantity{
+        align-self: center;
+        width: 60px;
+        height: 20px;
+    }
+    
 }

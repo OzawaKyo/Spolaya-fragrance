@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 import { db } from '../config/firebase'
 import { getDocs, collection } from 'firebase/firestore'
 import './Item.css'
+import './button.css'
 
 export default function Item() {
 
@@ -37,19 +38,24 @@ export default function Item() {
             <Navbar />
             <div className='item'>
                 {product ? (
-                    <>  <div className='item2'>
+                    <>
                             <div className='item-name'>
                                 <h1 className='item-title'>{product.Name}</h1>
                                 <h1 className='item-brand'><span className='t-span'>by</span> {product.Brand}</h1>
                             </div>
                             <hr className='hrhr'/>
-                            <img className='item-img' src={product.Image} alt={product.Name} />
-
-                            <h2 className='item-price'>{product.Price} <span className='p-span'>DH</span></h2>
-                        </div>
+                            <form className='ll'>
+                                <img className='item-img' src={product.Image} alt={product.Name} />
+                                <div className='right'>
+                                    <h2 className='item-price'>Quantity :</h2>
+                                    <input type="number" defaultValue={1} className='quantity'/>
+                                    <h2 className='item-price'>{product.Price} <span className='p-span'>DH</span></h2>
+                                    <button className='box button-50 '>ADD TO CART</button>
+                                </div>
+                            </form>
                     </>
                 ) : (
-                    <p>Loading...</p>
+                    <p className='loading'>Loading...</p>
                 )}
             </div>
             
