@@ -1,8 +1,28 @@
-# React + Vite
+# Spolaya Fragrance
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue sur le projet Spolaya Fragrance ! Ce projet est une application web de boutique en ligne pour des parfums. 
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Fonctionnalités
+
+- Affichage des produits pour hommes et femmes
+- Navigation entre les pages de produits
+- Affichage des détails des produits
+
+## Dépendances
+
+- React
+- Firebase
+- React Router DOM
+- Vite
+
+## Progrès
+
+Ce projet est en cours de développement. Les fonctionnalités suivantes ne sont pas encore implémentées :
+
+- Barre de recherche
+- Gestion des comptes utilisateurs
+
+## Voici un aperçu de l'application :
+
+    https://spolaya-fragrance.web.app/
