@@ -25,4 +25,4 @@ Ce projet est en cours de développement. Les fonctionnalités suivantes ne sont
 
 ## Voici un aperçu de l'application :
 
-    https://spolaya-fragrance.web.app/
+    https://spolayafragrance.web.app/
