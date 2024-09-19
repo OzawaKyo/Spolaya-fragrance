@@ -1,0 +1,95 @@
+/* Container for the entire MenShop page */
+.MenShop_container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main section for the shop */
+.MenShop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4em;
+}
+
+/* Grid container for products */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center ;
+    gap: 1em;
+    max-width: 1200px; /* Added max width for the container */
+    width: 100%;
+    padding: 1em;
+}
+
+/* Each product card */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid #a3998c;
+    border-radius: 10px;
+    width: calc(25% - 2em); /* Make 4 cards fit in a row by setting width to 25% minus the gap */
+    height: 400px;
+    transition: transform 0.3s ease;
+    background-color: white; /* Add background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a polished look */
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Slight hover effect */
+}
+
+/* Image styling */
+.product-image {
+    width: 80%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover; /* Keep image aspect ratio */
+    margin-bottom: 1em;
+    border-radius: 10px;
+}
+
+/* Product name styling */
+.product-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+/* Product price styling */
+.product-price {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* RESPONSIVE STYLES */
+/* Adjust product card width for medium-sized screens */
+@media (max-width: 1024px) {
+    .product-card {
+        width: calc(33.33% - 2em); /* 3 products per row */
+    }
+}
+
+/* Adjust product card width for small screens */
+@media (max-width: 768px) {
+    .product-card {
+        width: calc(50% - 2em); /* 2 products per row */
+    }
+}
+
+/* Full-width product card for very small screens */
+@media (max-width: 480px) {
+    .product-card {
+        width: calc(100% - 2em); /* 1 product per row */
+    }
+}

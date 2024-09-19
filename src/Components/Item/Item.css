@@ -1,22 +1,24 @@
-.item-container{
-display: flex;
-flex-direction: column;
+.item-container {
+    display: flex;
+    flex-direction: column;
 }
 
-.item{
+.item {
     display: flex;
     /* justify-content: center; */
     /* background-color: red; */
     margin-top: 3em;
     flex-direction: column;
 }
-.item2{
+
+.item2 {
     /* background-color: blue; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.item-name{
+
+.item-name {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,12 +28,14 @@ flex-direction: column;
     /* justify-self: center; */
     justify-content: space-evenly;
 }
-.t-span{
+
+.t-span {
     text-transform: lowercase;
     color: #534c4a;
     font-style: oblique;
 }
-.item-title{
+
+.item-title {
     color: #504d4c;
     text-transform: uppercase;
     letter-spacing: .045em;
@@ -43,7 +47,8 @@ flex-direction: column;
     margin-bottom: 0.2em;
     justify-self: self-start;
 }
-.item-brand{
+
+.item-brand {
     color: #504d4c;
     margin: 0;
     margin-left: 7em;
@@ -56,14 +61,16 @@ flex-direction: column;
     line-height: 1.272727273;
     /* align-self: self-end; */
 }
-.hrhr{
+
+.hrhr {
     width: 40em;
     align-self: center;
     justify-self: center;
     margin-top: 2em;
 
 }
-.ll{
+
+.ll {
     display: flex;
     padding-top: 2em;
     align-self: center;
@@ -72,60 +79,74 @@ flex-direction: column;
     margin-bottom: 2.5em;
     gap: 3em;
 }
-.item-img{
+
+.item-img {
 
     width: 300px;
 }
-.right{
+
+.ll_right {
     display: flex;
     flex-direction: column;
+    gap: 2em;
 }
-.box{
-    color: white;
+
+.box {
+    /* color: white; */
     width: 250px;
     height: 50px;
 }
-.item-price{
+
+.item-price {
     color: black;
     width: 300px;
     text-align: start;
 }
-.quantity{
+
+.quantity {
     width: 50px;
     height: 25px;
-    align-self : start;
+    align-self: start;
     text-align: center;
 }
-.loading{
+
+.loading {
     align-self: center;
 }
-@media screen and (max-width : 700px){
-    .ll{
+
+@media screen and (max-width : 700px) {
+    .ll {
         flex-direction: column;
         margin: 0;
     }
-    .hrhr{
+
+    .hrhr {
         width: 20em;
     }
-    .right{
+
+    .ll_right {
         justify-content: center !important;
         align-items: center !important;
     }
-    .item-name{
+
+    .item-name {
         width: 400px;
     }
-    .item{
+
+    .item {
         width: 400px;
         align-self: center;
     }
-    .item-price{
+
+    .item-price {
         text-align: center;
-    
+
     }
-    .quantity{
+
+    .quantity {
         align-self: center;
         width: 60px;
         height: 20px;
     }
-    
+
 }

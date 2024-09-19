@@ -1,8 +1,8 @@
 
 import { useParams } from 'react-router-dom';
-import Navbar from '../Homepage/Navbar';
+import Navbar from '../Navbar/Navbar';
 import { useEffect, useState } from 'react'
-import { db } from '../config/firebase'
+import { db } from '../../config/firebase'
 import { getDocs, collection } from 'firebase/firestore'
 import './Item.css'
 import './button.css'
@@ -46,11 +46,11 @@ export default function Item() {
                             <hr className='hrhr'/>
                             <form className='ll'>
                                 <img className='item-img' src={product.Image} alt={product.Name} />
-                                <div className='right'>
+                                <div className='ll_right'>
                                     <h2 className='item-price'>Quantity :</h2>
                                     <input type="number" defaultValue={1} className='quantity'/>
                                     <h2 className='item-price'>{product.Price} <span className='p-span'>DH</span></h2>
-                                    <button className='box button-50 '>ADD TO CART</button>
+                                    <button className='box shop_now '>ADD TO CART</button>
                                 </div>
                             </form>
                     </>
