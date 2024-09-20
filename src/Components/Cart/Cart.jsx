@@ -35,7 +35,7 @@ export default function Cart() {
             </div>
             <div className="cart__summary">
               <h2 className="cart__summary-total">Total: {calculateTotal()} DH</h2>
-              <button className="cart__checkout-button">Proceed to Checkout</button>
+              <button className="cart__checkout-button">Checkout</button>
             </div>
           </>
         )}

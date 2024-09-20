@@ -1,4 +1,3 @@
-/* General body styling */
 body {
     font-family: 'Tajawal', sans-serif;
     margin: 0;
@@ -10,60 +9,53 @@ body {
     overflow: visible;
 }
 
-/* Container for the entire shop section */
 .shop {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 5em;
     width: 100%;
-    /* padding: 0 1em; */
 }
 
-/* Grid container for products */
 .products {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 1em;
     max-width: 1200px;
     width: 100%;
     padding: 0em 0em !important;
 }
 
-/* Each product card */
 .product {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 0em;
+    /* justify-content: space-between; */
+    padding: 3em 0em;
     border: 1px solid #a3998c;
     border-radius: 10px;
-    width: calc(25% - 2em); /* 4 products per row */
-    height: 300px;
+    width: calc(25% - 2em);
+    min-height: 260px;
     transition: transform 0.3s ease;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product:hover {
-    transform: translateY(-5px); /* Hover effect */
+    transform: translateY(-5px);
     cursor: pointer;
 }
 
-/* Product image styling */
 .product-image {
-    width: 80%;
-    height: auto;
-    max-height: 150px;
-    object-fit: cover;
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
     margin-bottom: 1em;
     border-radius: 8px;
 }
 
-/* Product name styling */
 .product-name {
     font-size: 1.1em;
     font-weight: bold;
@@ -72,7 +64,6 @@ body {
     color: #504d4c;
 }
 
-/* Title styling */
 .Title {
     margin: 0;
     color: #504d4c;
@@ -85,7 +76,6 @@ body {
     margin-bottom: 1em;
 }
 
-/* View all button container */
 .view {
     display: flex;
     align-items: center;
@@ -102,31 +92,32 @@ body {
     text-decoration: underline;
 }
 
-/* Arrow icon for view-all */
 .arrow {
     width: 24px;
     height: 24px;
 }
 
-/* Responsive Styles */
-/* For medium-sized screens, adjust product width */
 @media (max-width: 1024px) {
     .product {
-        width: calc(33.33% - 2em); /* 3 products per row */
+        width: calc(33.33% - 2em);
     }
 }
 
-/* For smaller screens, adjust product width */
 @media (max-width: 768px) {
     .product {
-        width: calc(50% - 2em); /* 2 products per row */
+        width: 300px;
+    }
+    .product-image {
+        height: 160px;
     }
 }
 
-/* For very small screens, make products full-width */
 @media (max-width: 480px) {
     .product {
-        width: calc(100% - 2em); /* 1 product per row */
+        width: 300px;
+    }
+    .product-image {
+        height: 200px;
     }
 }
 

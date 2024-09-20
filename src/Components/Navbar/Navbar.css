@@ -67,14 +67,11 @@
 /* for phone size */
 @media (max-width: 600px){
     .navbar{
-        /* margin-left: 1em; */
-        /* margin-right: 1em; */
-        justify-content: center;
-    }
-    .navbar .right{
-        display: none;
+        margin-left: 1em;
+        margin-right: 1em; 
+        justify-content: space-between;
     }
     .logo{
-        width: 250px;
+        width: 200px;
     }
 }

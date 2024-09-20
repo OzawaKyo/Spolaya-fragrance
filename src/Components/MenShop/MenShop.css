@@ -17,11 +17,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center ;
+    align-items: stretch;
     gap: 1em;
-    max-width: 1200px; /* Added max width for the container */
+    max-width: 1200px;
     width: 100%;
-    padding: 1em;
+    padding: 0em 0em !important;
 }
 
 /* Each product card */
@@ -29,29 +29,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin: 1em;
     padding: 1em;
     border: 1px solid #a3998c;
     border-radius: 10px;
-    width: calc(25% - 2em); /* Make 4 cards fit in a row by setting width to 25% minus the gap */
-    height: 400px;
+    width: calc(25% - 2em);
+    min-height: 350px;
     transition: transform 0.3s ease;
-    background-color: white; /* Add background color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a polished look */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
 .product-card:hover {
-    transform: translateY(-5px); /* Slight hover effect */
+    transform: translateY(-5px);
 }
 
 /* Image styling */
 .product-image {
-    width: 80%;
-    height: auto;
-    max-height: 200px;
-    object-fit: cover; /* Keep image aspect ratio */
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
     margin-bottom: 1em;
     border-radius: 10px;
 }
@@ -73,23 +72,29 @@
 }
 
 /* RESPONSIVE STYLES */
-/* Adjust product card width for medium-sized screens */
 @media (max-width: 1024px) {
     .product-card {
-        width: calc(33.33% - 2em); /* 3 products per row */
+        width: calc(33.33% - 2em);
     }
 }
 
-/* Adjust product card width for small screens */
 @media (max-width: 768px) {
+    .shop{
+        margin-top: 2em;
+    }
     .product-card {
-        width: calc(50% - 2em); /* 2 products per row */
+        width: 250px !important;;
+    }
+    .product-image {
+        height: 180px;
     }
 }
 
-/* Full-width product card for very small screens */
 @media (max-width: 480px) {
     .product-card {
-        width: calc(100% - 2em); /* 1 product per row */
+        width: 250px !important;;
+    }
+    .product-image {
+        height: 220px;
     }
 }
