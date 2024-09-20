@@ -69,6 +69,7 @@ function Navbar() {
             className="icons"
             onMouseEnter={() => handleMouseEnter(2)}
             onMouseLeave={() => handleMouseLeave(2)}
+            onClick={() => navigate('/Cart')}
           >
             <svg
               onClick={() => navigate('/Shop')}
