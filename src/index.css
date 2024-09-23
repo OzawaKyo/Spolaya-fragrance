@@ -7,6 +7,8 @@ body {
     color: #989898;
     text-align: left;
     background-color: #FFFFFF;
+
+    /* remove the scroll bar in all pages */
 }
 
 /* remove margin from all */

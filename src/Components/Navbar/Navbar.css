@@ -75,3 +75,25 @@
         width: 200px;
     }
 }
+.search-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 0.5em 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    width: 200px; /* Adjust width as needed */
+  }
+  
+  .search-input:focus {
+    border-color: #666;
+    outline: none;
+  }
+  
+  .search_icon {
+    cursor: pointer;
+  }
+  
